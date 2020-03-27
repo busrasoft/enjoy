@@ -16,4 +16,4 @@ php artisan migrate:rollback
 
 <h1> Yanlış Yapılan Son 2 Migration İşlemini Geri Alma Komutu:  </h1>
 php artisan migrate:rollback --step=2 
-<p> --step'ten sonra kaç işlemi geri almak istersen o kadar değer yazabilirsin. 
+<p> --step'ten sonra kaç işlemi geri almak istersen o kadar değer yazabilirsin. </p>
