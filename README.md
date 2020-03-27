@@ -1,4 +1,4 @@
-<h1> migration Dosyası oluşturma komutu:  </h1>
+<h1> Migration Dosyası Oluşturma Komutu:  </h1>
 
 php artisan make:migration create_users_table
 
@@ -6,3 +6,6 @@ php artisan make:migration create_users_table
 php artisan make:migration create_users_table --create=users
 
 php artisan make:migration add_votes_to_users_table --table=users
+
+<h1> Migration Çalıştırma Komutu:  </h1>
+php artisan migrate
