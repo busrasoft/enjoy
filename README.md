@@ -15,5 +15,23 @@ php artisan migrate
 php artisan migrate:rollback
 
 <h1> Yanlış Yapılan Son 2 Migration İşlemini Geri Alma Komutu:  </h1>
-php artisan migrate:rollback --step=2 
 <p> --step'ten sonra kaç işlemi geri almak istersen o kadar değer yazabilirsin. </p>
+php artisan migrate:rollback --step=2 
+
+<h1>Migrate: reset komutu, uygulamanızın tüm database işlemlerini geri alır ve veriler silinir:</h1>
+php artisan migrate:reset
+
+<h1>Migrate: refresh komutu tüm database işlemlerinizi geri alır ve ardından migrate komutunu yürütür.</h1>
+php artisan migrate:refresh
+
+<h1>Veritabanını yenileyin ve tüm veritabanı verilerini yükleyin</h1>
+php artisan migrate:refresh --seed
+
+<h>Modifier Database Sütun Düzenleyiciler </h1>
+->nullable();  bu sütun boş olabilir.
+->unsigned(); bu sütun negatif olamaz. INTEGER olarak ayarlandı.
+->after('column'); belirli bir sütundan sonra oluşturulsun. 
+->autoIncrement(); otomatik artış
+->unique(); benzersiz olmalı email için kullanılır.
+$table->string('email')->unique();
+$table->unique('email');
