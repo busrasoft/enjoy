@@ -57,3 +57,10 @@ php artisan migrate:refresh --seed
     <dt>{</dt>
        <dt> // $this->call(UsersTableSeeder::class);</dt>
    <dt> }</dt>
+
+   <br>
+   Verileri database kaydetme komutu: 
+    <br>
+   <b>php artisan db:seed</b>
+    <br>
+   <b> php artisan db:seed --class=UsersTableSeeder</b>
