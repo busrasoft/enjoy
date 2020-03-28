@@ -35,3 +35,20 @@ php artisan migrate:refresh --seed
 ->unique(); benzersiz olmalı email için kullanılır.
 $table->string('email')->unique();
 $table->unique('email');
+
+<h1>Seeder Dosyası Create Oluşturma</h1>
+php artisan make:seeder UsersTableSeeder
+
+Run : Çalıştırmak için örnek kodlar:
+
+ DB::table('users')->insert([
+            'name' => Str::random(10),
+            'email' => Str::random(10).'@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+Bu kodları yazdıktan sonra DatabaseSeader.php dosyasının içerisinde run() fonksiyonuna class adını 
+
+ public function run()
+    {
+        // $this->call(UsersTableSeeder::class);
+    }
