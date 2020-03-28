@@ -28,14 +28,17 @@ php artisan migrate:refresh
 php artisan migrate:refresh --seed
 
 <h>Modifier Database Sütun Düzenleyiciler </h1>
-->nullable();  bu sütun boş olabilir.
-->unsigned(); bu sütun negatif olamaz. INTEGER olarak ayarlandı.
-->after('column'); belirli bir sütundan sonra oluşturulsun. 
-->autoIncrement(); otomatik artış
-->unique(); benzersiz olmalı email için kullanılır.
-$table->string('email')->unique();
-$table->unique('email');
 
+<ul>
+  <li>->nullable();  bu sütun boş olabilir.</li>
+  <li>->nullable();  bu sütun boş olabilir.</li>
+  <li>->unsigned(); bu sütun negatif olamaz. INTEGER olarak ayarlandı.</li>
+  <li>->after('column'); belirli bir sütundan sonra oluşturulsun.</li>
+  <li>->autoIncrement(); otomatik artış</li>
+  <li>->unique(); benzersiz olmalı email için kullanılır.</li>
+  <li>$table->string('email')->unique();</li>
+  <li>$table->unique('email');</li>
+</ul>
 <h1>Seeder Dosyası Create Oluşturma</h1>
 php artisan make:seeder UsersTableSeeder
 
