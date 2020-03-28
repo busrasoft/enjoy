@@ -36,8 +36,8 @@ php artisan migrate:refresh --seed
   <li>->after('column'); belirli bir sütundan sonra oluşturulsun.</li>
   <li>->autoIncrement(); otomatik artış</li>
   <li>->unique(); benzersiz olmalı email için kullanılır.</li>
-  <li>$table->string('email')->unique();</li>
-  <li>$table->unique('email');</li>
+  <dt>$table->string('email')->unique();</dt>
+  <dt>$table->unique('email');</dt>
 </ul>
 <h1>Seeder Dosyası Create Oluşturma</h1>
 php artisan make:seeder UsersTableSeeder
