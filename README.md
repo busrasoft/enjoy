@@ -40,16 +40,18 @@ php artisan migrate:refresh --seed
   <dt>$table->unique('email');</dt>
 </ul>
 <h1>Seeder Dosyası Create Oluşturma</h1>
-<dt>php artisan make:seeder UsersTableSeeder</dt>
+<b>php artisan make:seeder UsersTableSeeder</b>
 
 <dt>Run : Çalıştırmak için örnek kodlar:</dt>
-
+<br>
  <dt>DB::table('users')->insert([</dt>
             <dt>'name' => Str::random(10),</dt>
             <dt>'email' => Str::random(10).'@gmail.com',</dt>
             <dt>'password' => Hash::make('password'),</dt>
         <dt>]);</dt>
-<dt>Bu kodları yazdıktan sonra DatabaseSeader.php dosyasının içerisinde run() fonksiyonuna class adını</dt> 
+        <br>
+<dt>Bu kodları yazdıktan sonra DatabaseSeader.php dosyasının içerisinde run() fonksiyonuna class adını yazmalıyız.</dt> 
+        <br>
 
  <dt>public function run()</dt>
     <dt>{</dt>
