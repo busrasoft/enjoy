@@ -64,6 +64,6 @@ php artisan migrate:refresh --seed
    Verileri database kaydetme komutu: <br>    
    <b>php artisan db:seed</b><br>
    <b> php artisan db:seed --class=UsersTableSeeder</b>
-<dt> Migration ve Seeder Dosyalarını Birlikte Çalıştırma Komutu</dt>
+<dt> Migration ve Seeder Dosyalarını Birlikte Çalıştırma Komutu</dt><br>
 <b>veritabanınızı tamamen yeniden oluşturmak için</b><br>
 <b>php artisan migrate:fresh --seed</b>
