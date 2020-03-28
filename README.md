@@ -44,6 +44,11 @@ php artisan migrate:refresh --seed
 
 <dt>Run : Çalıştırmak için örnek kodlar:</dt>
 <br>
+
+<dt> use Illuminate\Support\Facades\DB;</dt>
+<dt> use Illuminate\Support\Facades\Hash;</dt>
+<dt> use Illuminate\Support\Str;</dt>
+<br>
  <dt>DB::table('users')->insert([</dt>
             <dt>'name' => Str::random(10),</dt>
             <dt>'email' => Str::random(10).'@gmail.com',</dt>
@@ -52,15 +57,13 @@ php artisan migrate:refresh --seed
         <br>
 <dt>Bu kodları yazdıktan sonra DatabaseSeader.php dosyasının içerisinde run() fonksiyonuna class adını yazmalıyız.</dt> 
         <br>
-
  <dt>public function run()</dt>
     <dt>{</dt>
        <dt> // $this->call(UsersTableSeeder::class);</dt>
-   <dt> }</dt>
-
-   <br>
-   Verileri database kaydetme komutu: 
-    <br>
-   <b>php artisan db:seed</b>
-    <br>
+   <dt> }</dt><br>
+   Verileri database kaydetme komutu: <br>    
+   <b>php artisan db:seed</b><br>
    <b> php artisan db:seed --class=UsersTableSeeder</b>
+<dt> Migration ve Seeder Dosyalarını Birlikte Çalıştırma Komutu</dt>
+<b>veritabanınızı tamamen yeniden oluşturmak için</b><br>
+<b>php artisan migrate:fresh --seed</b>
